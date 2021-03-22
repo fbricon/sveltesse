@@ -5,7 +5,7 @@
 	
 	async function serverGreeting() {
 	  const param = (name)?name:"World";
-	  const resp = await fetch(`http://localhost:8080/hello/`+name);
+	  const resp = await fetch(`/hello/`+name);
 	  const greeting = await resp.text();
 	  response = `${greeting} (call #${++counter})`;
 	}
